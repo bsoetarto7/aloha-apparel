@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var itemsInCart=1;
+  // Flickity carousel init and options
   $('#aloha-carousel-most-love').flickity({
     // options
     cellAlign: 'left',
@@ -8,9 +8,45 @@ $(document).ready(function(){
     prevNextButtons: false,
     groupCells: true
   });
+  // The red notification on the add to cart button on the header will apppear.
+  var itemsInCart=1;
   $(".add-to-cart-btn").click(function(){
       $( ".items-in-cart" ).text(itemsInCart);
       $(".items-in-cart").removeClass("hide-item");
       itemsInCart++;
+  });
+  // Nav buttons that will scroll to to specific sections of the page
+  var offsetTop = 100;
+  // Check the window width and provide the proper offset from top when scrolling to 
+  // specific section on load and when on resizing the screen.
+  if(window.innerWidth<600){
+    offsetTop = 150;
+  }
+  window.addEventListener('resize', function () {
+    if(window.innerWidth<600){
+      offsetTop = 150;
+    }else{
+      offsetTop = 100;
+    }
+  });
+  $("#nav-about").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aloha-about").offset().top-offsetTop
+    }, 1000);
+  });
+  $("#nav-shop").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aloha-categories").offset().top-offsetTop
+    }, 1000);
+  });
+  $("#nav-featured").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aloha-featured").offset().top-offsetTop
+    }, 1000);
+  });
+  $("#nav-updates").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aloha-updates").offset().top-offsetTop
+    }, 1000);
   });
 });
