@@ -45,43 +45,68 @@ p{
   padding: 20px 15px;
 }
 .flex-container{
-  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .flex-container-no-wrap{
-  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .flex-item{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 /* Mobile flex grid */
-.flex-item-mobile-25{
-  flex: 0 0 25%;
-}
 .flex-item-mobile-50{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
 .flex-item-mobile-100{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
 }
 .flex-order-mobile-1{
-  order: 1
+  -webkit-box-ordinal-group:2;
+  -ms-flex-order:1;
+  order:1
 }
 .flex-order-mobile-2{
-  order: 2
+  -webkit-box-ordinal-group:3;
+  -ms-flex-order:2;
+  order:2
 }
 .flex-order-mobile-3{
-  order: 3
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
 }
 /* End of mobile flex grid */
 .vertical-align-center{
-  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .text-center{
   text-align: center;
@@ -189,13 +214,27 @@ p{
 .aloha-masonry-nav-btns{
   padding: 20px 0;
 }
-.aloha-masonry-nav-btns .masonry-item{
-  height: 200px;
+.aloha-masonry-nav-btns .masonry-item-rectangle{
+  padding-top: 50%;
+  position:relative;
+}
+.aloha-masonry-nav-btns .masonry-item-square{
+  padding-top: 100%;
+  position:relative;
 }
 .aloha-masonry-nav-btns p{
   font-size: 1.625rem;
   font-weight: 600;
   text-shadow: 2px 2px 4px #969696;
+  position: absolute;
+  top:50%;
+  right:50%;
+  margin: 0;
+  -ms-transform: translate(50%,-50%);
+  -webkit-transform: translate(50%,-50%);
+  -o-transform: translate(50%,-50%);
+  -moz-transform: translate(50%,-50%);
+  transform: translate(50%,-50%);
 }
 .masonry-margin-right-5{
   margin-right: 5px;
@@ -416,18 +455,28 @@ footer ul li:last-child .fa{
   }
   /* Tablet flex grid */
   .flex-item-tablet{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
   }
   .flex-item-tablet-50{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
   }
   .flex-order-tablet-1{
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1
   }
   .flex-order-tablet-2{
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2
   }
   .flex-order-tablet-3{
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3
   }
   .flex-tablet-padding-right-5{
@@ -448,9 +497,6 @@ footer ul li:last-child .fa{
   .aloha-hero .aloha-hero-text p{
     font-size: 1.5rem;
   }
-  .aloha-masonry-nav-btns .masonry-item{
-    height: 200px;
-  }
   .masonry-men{
     margin-bottom: 0px;
   }
@@ -468,8 +514,12 @@ footer ul li:last-child .fa{
   }
   footer .aloha-social-media{
     text-align: left;
-    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   footer ul{
     width: 200px;
@@ -493,6 +543,8 @@ footer ul li:last-child .fa{
     margin-bottom: 0px;
   }
   footer .flex-container{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   footer .container{
@@ -502,9 +554,6 @@ footer ul li:last-child .fa{
 /* ---------- End of Tablet ---------- */
 /* ---------- Desktop ---------- */
 @media screen and (min-width:1240px){
-  .flex-item-desktop-25{
-    flex: 0 0 25%;
-  }
   .aloha-header nav ul li{
     padding: 0 20px; 
     margin: 0 10px;
@@ -515,9 +564,6 @@ footer ul li:last-child .fa{
   }
   .carousel-cell{
     width: 25%;
-  }
-  .aloha-masonry-nav-btns .masonry-item{
-    height: 320px;
   }
 }
 /* ---------- End of Desktop ---------- */
