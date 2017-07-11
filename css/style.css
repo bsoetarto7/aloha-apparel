@@ -1,0 +1,523 @@
+/* ---------- Default ---------- */
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*{
+  color: #2d2d2d;
+  font-family: Raleway, sans-serif;
+}
+html{
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5,h5,h6{
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 700;
+}
+h1{
+  font-size: 1.85rem;
+}
+h2{
+  font-size: 1.75rem;
+}
+h3{
+  font-size: 1.625rem;
+}
+h2 i{
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+p{
+  font-size: 0.875rem;
+  line-height: 21px;
+  font-weight: 300;
+}
+/* ---------- End of default ---------- */
+/* ---------- Reuseable css ---------- */
+.container{
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.container-fluid{
+  padding: 20px 15px;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-container-no-wrap{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.flex-item{
+  flex: 1 0 auto;
+}
+/* Mobile flex grid */
+.flex-item-mobile-25{
+  flex: 0 0 25%;
+}
+.flex-item-mobile-50{
+  flex: 0 0 50%;
+}
+.flex-item-mobile-100{
+  flex: 0 0 100%;
+}
+.flex-order-mobile-1{
+  order: 1
+}
+.flex-order-mobile-2{
+  order: 2
+}
+.flex-order-mobile-3{
+  order: 3
+}
+/* End of mobile flex grid */
+.vertical-align-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+.text-white{
+  color: #fff;
+}
+.hide-item{
+  display: none;
+}
+/* ---------- End of reuseable css ---------- */
+/* ---------- Mobile Content ---------- */
+/* ----- Header ----- */
+.aloha-header{
+  position: relative;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
+}
+.aloha-header .company-logo{
+  max-height: 50px;
+  max-width: 100%;
+}
+.aloha-header nav{
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top:1px solid #d7d7d7;
+}
+.aloha-header nav ul{
+  padding: 0;
+  margin: 0;
+}
+.aloha-header nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px; 
+  margin: 0;
+  color:#e2574c;
+}
+.aloha-header .aloha-cart-btn{
+  background: transparent;
+  border:none;
+  padding: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: right;
+  position: relative;
+}
+.aloha-header .aloha-cart-btn:hover{
+  cursor: pointer
+}
+.aloha-header .aloha-cart-btn img{
+  max-height: 50px;
+}
+.aloha-header .items-in-cart{
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #e2574c;
+  color: #fff;
+  width: 27px;
+  height: 27px;
+  font-size: 0.9rem;
+}
+/* ----- End of Header ----- */
+/* ----- Hero ----- */
+.aloha-hero{
+  background-image: none,url('../img/banner-girl.png'),url('../img/flower-bkgd.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('../img/banner-girl.png'),url('../img/flower-bkgd.jpg');
+  background-size: cover,200px,cover;
+  background-position: center,bottom,center;
+  background-repeat: no-repeat;
+  height: 550px; 
+  margin-top: 94px;
+  margin-bottom: 20px; 
+}
+.aloha-hero h1{
+  margin: 0;
+  text-shadow: 2px 2px 4px #969696;
+}
+.aloha-hero .aloha-hero-text p{
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 4px #969696;
+}
+/* ----- End of Hero ----- */
+/* ----- Hand Craft section ----- */
+.aloha-hand-craft p{
+  max-width: 553px;
+  margin: 20px auto 0 auto;
+  line-height: 32px;
+}
+.aloha-hand-craft h2, .aloha-newsletter-subscription h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* ----- End of Hand Craft section ----- */
+/* ----- Categories ----- */
+.aloha-masonry-nav-btns{
+  padding: 20px 0;
+}
+.aloha-masonry-nav-btns .masonry-item{
+  height: 200px;
+}
+.aloha-masonry-nav-btns p{
+  font-size: 1.625rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #969696;
+}
+.masonry-margin-right-5{
+  margin-right: 5px;
+}
+.masonry-margin-left-5{
+  margin-left: 5px;
+}
+.masonry-margin-top{
+  margin-top:10px;
+}
+.masonry-men{
+  background-image:url('../img/mens-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/mens-category.jpg');
+  background-position: center;
+  background-size:cover;
+  margin-bottom: 10px;
+}
+.masonry-trend{
+  background-image:url('../img/mens-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/trends-category.jpg');
+  background-position: center;
+  background-size:cover;
+}
+.masonry-glasses{
+  background-image:url('../img/glasses-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/glasses-category.jpg');
+  background-position: center;
+  background-size:cover;
+}
+.masonry-sale{
+  background-image:url('../img/mens-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/sale-category.jpg');
+  background-position: center;
+  background-size:cover;
+}
+.masonry-bags{
+  background-image:url('../img/bags-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/bags-category.jpg');
+  background-position: center;
+  background-size:cover;
+}
+.masonry-womens{
+  background-image:url('../img/womens-category.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/womens-category.jpg');
+  background-position: center;
+  background-size:cover;
+  margin-top: 10px;
+}
+/* ----- End of Categories ----- */
+/* ----- Most love carousel ----- */
+.aloha-most-love{
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+/* Flickity carousel css */
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+}
+.flickity-page-dots{
+  bottom: 0px;
+}
+/* End of flickity carousel css */
+.aloha-most-love .aloha-carousel-most-love{
+  padding: 0 0 40px 0;
+  height: 500px;
+  margin: 0 10px;
+}
+.aloha-most-love .aloha-carousel-most-love .aloha-carousel-most-love-item h3{
+  color:#e2574c;
+  margin: 10px 0;
+  font-size: 1.4rem; 
+}
+.aloha-most-love .aloha-carousel-most-love .aloha-carousel-most-love-item p{
+  margin: 0;
+  color:#969696;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.aloha-most-love .aloha-carousel-most-love .aloha-carousel-most-love-item p:last-child{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.aloha-most-love .aloha-carousel-most-love .aloha-carousel-most-love-item img{
+  max-width: 100%;
+}
+.add-to-cart-btn{
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+}
+.add-to-cart-btn:hover{
+  cursor: pointer;
+  background-color: #969696;
+}
+.aloha-most-love .aloha-carousel-most-love-btns .carousel-btn{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  border:1px solid #d7d7d7;
+}
+.aloha-most-love .aloha-carousel-most-love-btns .carousel-btn.active{
+  background-color: grey;
+}
+/* ----- End of most love carousel ----- */
+/* ----- Newsletter subscription ----- */
+.aloha-newsletter-subscription{
+  background-image: url('../img/wave-bkgd.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/wave-bkgd.jpg');
+  background-position: bottom;
+  background-size:cover;
+  min-height: 350px;
+}
+.aloha-newsletter-subscription .subscription-form{
+  display: inline-block;
+  position: relative
+}
+.aloha-newsletter-subscription input{
+  height: 40px;
+  border-radius:20px;
+  border-style: none;
+  border: 1px solid grey;
+  padding: 10px 100px 10px 10px;
+  width:300px;
+}
+.aloha-newsletter-subscription button{
+    height: 40px;
+    border-radius: 20px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top:0;
+    border: none;
+    box-shadow: none;
+    background-color: #e2574c;
+    color: #fff;
+}
+.aloha-newsletter-subscription button:hover{
+  cursor: pointer;
+}
+.aloha-newsletter-subscription h2{
+  text-shadow: 2px 2px 4px #969696;
+}
+.aloha-newsletter-subscription p{
+  max-width: 573px;
+  line-height: 32px;
+}
+/* ----- End of newsletter subscription ----- */
+/* ----- Footer ----- */
+footer{
+  background-color: #242424;
+  margin-top: 10px;
+}
+footer .aloha-contact-info{
+  text-align: center;
+}
+footer .aloha-contact-info p{
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 400;
+}
+footer .aloha-contact-info p:first-child{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+footer .aloha-contact-info p:nth-child(2n){
+  margin-top: 0px;
+}
+footer .aloha-social-media{
+  text-align: center;
+}
+footer ul{
+  padding: 0;
+}
+footer ul li{
+  list-style: none;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+footer ul li .fa{
+  margin-right: 20px;
+}
+footer ul li:last-child .fa{
+  margin-right: 0px;
+}
+/* ----- End of Footer ----- */
+/* ---------- End of content mobile ---------- */
+/* ---------- Mobile ---------- */
+@media screen and (max-width:599px){
+  .hide-mobile{
+    display: none;
+  }
+}
+/* ---------- End of Mobile ---------- */
+/* ---------- Tablet ---------- */
+@media screen and (min-width:600px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  /* Tablet flex grid */
+  .flex-item-tablet{
+    flex: 1 0 auto;
+  }
+  .flex-item-tablet-50{
+    flex: 0 0 50%;
+  }
+  .flex-order-tablet-1{
+    order: 1
+  }
+  .flex-order-tablet-2{
+    order: 2
+  }
+  .flex-order-tablet-3{
+    order: 3
+  }
+  .flex-tablet-padding-right-5{
+    padding-right: 5px;
+  }
+  .flex-tablet-padding-left-5{
+    padding-left: 5px;
+  }
+  /* End of tablet flex grid */
+  .aloha-header nav{
+    margin-top: 0px;
+    padding-top: 0px;
+    border:none;
+  }
+  .aloha-header nav ul li{
+    padding: 0 10px;
+  }
+  .aloha-hero .aloha-hero-text p{
+    font-size: 1.5rem;
+  }
+  .aloha-masonry-nav-btns .masonry-item{
+    height: 200px;
+  }
+  .masonry-men{
+    margin-bottom: 0px;
+  }
+  .masonry-womens{
+    margin-top: 0px;
+  }
+  .carousel-cell{
+    width: 50%;
+  }
+  .aloha-newsletter-subscription input{
+    width: 350px;
+  }
+  footer .aloha-contact-info{
+    text-align: left;
+  }
+  footer .aloha-social-media{
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer ul{
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  footer ul li{
+    display: block;
+  }
+  footer ul li:last-child{
+    margin-bottom: 0px;
+  }
+  footer ul li .fa{
+    width: 20%;
+    margin-right: 0;
+  }
+  footer ul li span{
+    width: 80%;
+  }
+  footer .aloha-contact-info p:last-child{
+    margin-bottom: 0px;
+  }
+  footer .flex-container{
+    align-items: flex-start;
+  }
+  footer .container{
+    padding: 40px 20px;
+  }
+}
+/* ---------- End of Tablet ---------- */
+/* ---------- Desktop ---------- */
+@media screen and (min-width:1240px){
+  .flex-item-desktop-25{
+    flex: 0 0 25%;
+  }
+  .aloha-header nav ul li{
+    padding: 0 20px; 
+    margin: 0 10px;
+  }
+  .aloha-most-love .aloha-carousel-most-love{
+    padding: 0 0 40px 0;
+    margin: 0 20px;
+  }
+  .carousel-cell{
+    width: 25%;
+  }
+  .aloha-masonry-nav-btns .masonry-item{
+    height: 320px;
+  }
+}
+/* ---------- End of Desktop ---------- */
