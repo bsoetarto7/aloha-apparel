@@ -153,6 +153,7 @@ p{
   margin: 0;
   color:#e2574c;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 .aloha-header nav ul li:hover{
   cursor: pointer;
@@ -501,6 +502,7 @@ footer ul li:last-child .fa{
   }
   .aloha-header nav ul li{
     padding: 0 10px;
+    font-size: 1rem;
   }
   .aloha-hero{
     margin-top: 94px;
