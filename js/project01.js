@@ -8,7 +8,7 @@ $(document).ready(function(){
     prevNextButtons: false,
     groupCells: true
   });
-  // The red notification on the add to cart button on the header will apppear.
+  // The red notification on the add to cart button on the header will appear.
   var itemsInCart=1;
   $(".add-to-cart-btn").click(function(){
       $( ".items-in-cart" ).text(itemsInCart);
