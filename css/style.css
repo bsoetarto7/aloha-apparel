@@ -195,7 +195,7 @@ p{
   background-position: center,bottom,center;
   background-repeat: no-repeat;
   height: 550px; 
-  margin-top: 94px;
+  margin-top: 143px;
   margin-bottom: 20px; 
 }
 .aloha-hero h1{
@@ -501,6 +501,9 @@ footer ul li:last-child .fa{
   }
   .aloha-header nav ul li{
     padding: 0 10px;
+  }
+  .aloha-hero{
+    margin-top: 94px;
   }
   .aloha-hero .aloha-hero-text p{
     font-size: 1.5rem;
