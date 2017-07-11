@@ -1,2 +1,2 @@
-# Project 1 - Aloha Apparel 
-This is a REDAcademy project
+# Project 1 - Aloha Homepage 
+This project focused on building a responsive homepage for a client called Aloha Apparel Co. It was built to accommodate the different screen sizes such as mobile, tablet and desktop.
