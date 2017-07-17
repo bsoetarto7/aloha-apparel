@@ -52,7 +52,7 @@ $(document).ready(function(){
         scrollTop: $("#aloha-updates").offset().top-offsetTop
     }, 1000);
   });
-
+  // Email subscription success
   $("#email-subscription-btn").click(function(e){
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if(regex.test($("#email-subscription").val())){
