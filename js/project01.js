@@ -6,7 +6,8 @@ $(document).ready(function(){
     contain: true,
     setGallerySize: false,
     prevNextButtons: false,
-    groupCells: true
+    groupCells: true,
+    autoPlay:true
   });
   // The red notification on the add to cart button on the header will appear.
   var itemsInCart=1;
@@ -22,6 +23,8 @@ $(document).ready(function(){
   if(window.innerWidth<600){
     offsetTop = 150;
   }
+  // Check the the window width when the window is resized and attach the appropriate offset from the
+  // the top.
   window.addEventListener('resize', function () {
     if(window.innerWidth<600){
       offsetTop = 150;
@@ -48,5 +51,14 @@ $(document).ready(function(){
     $('html, body').animate({
         scrollTop: $("#aloha-updates").offset().top-offsetTop
     }, 1000);
+  });
+
+  $("#email-subscription-btn").click(function(e){
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(regex.test($("#email-subscription").val())){
+      e.preventDefault();
+      alert("Thanks for subscribing");
+      $("#email-subscription").val("");
+    }
   });
 });
