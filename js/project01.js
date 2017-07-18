@@ -7,7 +7,7 @@ $(document).ready(function(){
     setGallerySize: false,
     prevNextButtons: false,
     groupCells: true,
-    autoPlay:true
+    // autoPlay:true
   });
   // The red notification on the add to cart button on the header will appear.
   var itemsInCart=1;
