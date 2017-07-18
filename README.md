@@ -7,4 +7,4 @@ This project focused on building a responsive homepage for a client called Aloha
   - Desktop (above 1240px)
 
 ### Screenshot
-![](./img/readme-screenshot/aloha-desktop.png | width=200)
+  ![Aloha desktop](./img/readme-screenshot/aloha-desktop.jpg)
