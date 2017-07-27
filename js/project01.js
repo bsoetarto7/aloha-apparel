@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $("a[href^='#']").not("a[href='#']").click(function() {
+    $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
   // Flickity carousel init and options
   $('#aloha-carousel-most-love').flickity({
     // options
@@ -12,8 +15,8 @@ $(document).ready(function(){
   // The red notification on the add to cart button on the header will appear.
   var itemsInCart=1;
   $(".add-to-cart-btn").click(function(){
-      $( ".items-in-cart" ).text(itemsInCart);
-      $(".items-in-cart").removeClass("hide-item");
+      $( "#items-in-cart" ).text(itemsInCart);
+      $("#items-in-cart").removeClass("hide-item");
       itemsInCart++;
   });
   // Nav buttons that will scroll to to specific sections of the page
@@ -31,6 +34,12 @@ $(document).ready(function(){
     }else{
       offsetTop = 100;
     }
+  });
+  
+  $("#aloha-skip-to-content").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aloha-about").offset().top-offsetTop
+    }, 1000);
   });
   $("#nav-about").click(function() {
     $('html, body').animate({

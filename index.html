@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <a id="aloha-skip-to-content" class="screen-reader-text" href="#aloha-about">Skip to content</a>
     <!-- header navigation -->
     <header class="aloha-header">
       <div class="container">
@@ -30,13 +31,13 @@
             </ul>
           </nav>
           <div class="flex-item flex-order-mobile-2 flex-order-tablet3">
-            <button type="" class="aloha-cart-btn"><div class="items-in-cart hide-item">0</div><img src="img/cart-icon.svg" alt="Button icon"/></button>
+            <button type="button" class="aloha-cart-btn"><span id="items-in-cart" class="items-in-cart hide-item">0</span><img src="img/cart-icon.svg" alt="Button icon"/></button>
           </div>
         </div>
       </div>
     </header>
     <!-- Aloha's hero Image section-->
-    <section class="aloha-hero container-fluid vertical-align-center">
+    <section id="aloha-hero" class="aloha-hero container-fluid vertical-align-center">
       <div class="aloha-hero-text">
       <p class="text-center text-white">NEW COLLECTION</p>
       <h1 class="text-center text-white">Spring/Summer 2017</h1>
@@ -49,6 +50,7 @@
     </section>
     <!-- Aloha's masonry site nav buttons-->
     <section id="aloha-categories" class="aloha-masonry-nav-btns container-fluid">
+      <h2 class="screen-reader-text">Aloha Categories</h2>
       <div class="flex-container">
         <div class="flex-item-mobile-100 flex-item-tablet-50 flex-tablet-padding-right-5">
           <div class="masonry-item-rectangle masonry-men">
@@ -159,7 +161,8 @@
       <div class="text-center">
         <h2 class="text-white"><i class="text-white">Sign up for</i> Updates</h2>
         <p class="text-white">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-        <form class="subscription-form" action="" method="post" class="text-center">
+        <form class="subscription-form text-center" method="post">
+          <label for="email-subscription" class="screen-reader-text">Please Enter Your Email</label>
           <input id="email-subscription" type="email" name="email" value="" placeholder="Please Enter Your Email" required>
           <button id="email-subscription-btn" type="submit">Subscribe</button>
         </form>
@@ -192,6 +195,7 @@
       </div>
     </footer>
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/vendor/tota11y.min.js"></script> -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/project01.js"></script>
   </body>
