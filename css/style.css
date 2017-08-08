@@ -369,7 +369,7 @@ p{
   cursor: pointer;
   background-color: #969696;
 }
-.aloha-most-love .aloha-carousel-most-love-btns .carousel-btn{
+.aloha-carousel-most-love-btns .carousel-btn{
   width: 15px;
   height: 15px;
   margin: 0 5px;
@@ -377,7 +377,7 @@ p{
   border-radius: 50%;
   border:1px solid #d7d7d7;
 }
-.aloha-most-love .aloha-carousel-most-love-btns .carousel-btn.active{
+.aloha-carousel-most-love-btns .carousel-btn.active{
   background-color: grey;
 }
 /* ----- End of most love carousel ----- */
