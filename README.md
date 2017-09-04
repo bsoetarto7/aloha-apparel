@@ -8,7 +8,7 @@ Things that I have learnt from building this demo homepage:
  - Not relying on a third-party css framework
 
 ### Screenshot
-These are the screenshot of what the homepage demo would like in the different screen sizes. Starting from mobile first, tablet followed by desktop view.
+These are the screenshot of what the homepage demo would look like in the different screen sizes. Starting from mobile first, tablet followed by desktop view.
   - Mobile (Below 600px)
   - Tablet (Between 600px and 1240px)
   - Desktop (above 1240px)
